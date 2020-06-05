@@ -1,0 +1,97 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  
+  
+    <h1>Enrolment Form</h1>
+    
+    <fieldset>
+      <legend><span class="number">1</span>Some basic info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+      
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+      
+      <label for="college">College:</label>
+      <input type="college" id="college" name="user_college">
+          
+      
+      <label>Branch:</label>
+      <input type="radio" id="ECE" value="ECE" name="user_branch"><label for="ece" class="light">Electronics And Communication</label><br>
+      <input type="radio" id="CSE/IT" value="CSE" name="user_branch"><label for="cse/it" class="light">Computer Science / Information Technology</label><br>
+      <input type="radio" id="EEE" value="EEE" name="user_branch"><label for="eee" class="light">Electrical and Electronics </label><br>
+      <input type="radio" id="MECH" value="MECH" name="user_branch"><label for="mech" class="light">Mechanical</label><br>
+      <input type="radio" id="OTHER" value="OTHER" name="user_branch"><label for="other" class="light">Other</label><br>
+
+       <br/>
+
+      <label>Year:</label>
+      <input type="radio" id="1year" value="1year" name="user_year"><label for="firstyear" class="light">First Year</label><br>
+      <input type="radio" id="2year" value="2year" name="user_year"><label for="secondyear" class="light">Second Year</label><br>
+      <input type="radio" id="3year" value="3year" name="user_year"><label for="thirdyear" class="light">Third  Year</label><br>
+      <input type="radio" id="4year" value="4year" name="user_year"><label for="fourthyear" class="light">Fourth Year</label><br>
+
+
+      
+
+
+
+     </fieldset>
+
+    <label>Interests:</label>
+    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Software Development</label><br>
+    <input type="checkbox" id="developmenth" value="interest_developmenth" name="user_interesth"><label class="light" for="hdevelopment">Haedware Development</label><br>
+    <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+    <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label><br><br/>
+      
+    
+    
+   
+      <fieldset>
+      
+     <legend><span class="number">2</span>Project Details</legend>
+    <label for="project">Select Project:</label>
+    <select id="project" name="user_project">
+      <optgroup label="Software Development">
+        <option value="frontend_developer">Front-End Developer</option>
+        <option value="java_developor">Java Developer</option>
+        <option value="python_developer">Python Developer</option>
+        <option value="backend_developer"> Backend Developer</option>
+        <option value="web_developer">Web Development</option>
+        <option value="app_developer">App Development</option>
+      </optgroup>
+      <optgroup label="Hardware Development">
+        <option value="iot_devlopment">Internet Of Things </option>
+        <option value="hardware">Hardware</option>
+   
+      </optgroup>
+      <optgroup label="Graphic Designing">
+        <option value="designng">Graphic Designing</option>
+        <option value="freelancer">Freelancer</option>
+      </optgroup>
+      <optgroup label="Other">
+      
+      </optgroup>
+    </select>
+
+       <fieldset>
+     
+        <label for="otherproject">Any other custom project want to do with community:</label>
+        <textarea id="otherproject" name="user_op"></textarea>
+       </fieldset>
+    
+     
+    </fieldset>
+    <button type="submit">Enroll Now</button>
+  </form>
+  
+</body>
+</html>
