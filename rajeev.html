@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pro Interns LOGIN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Piedra&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main1.css">
+	<style type="text/css">
+		
+		#heading
+{
+	padding-bottom: 15px;
+	font-family: 'Piedra', cursive;
+}
+
+#onetime
+{
+    font-family: 'Metal Mania', cursive;	
+}
+
+.headd
+{
+    font-family: 'Piedra', cursive;
+    font-size: 2.6rem;
+}
+</style>
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="headd login100-form-title">
+						Enrollment Form:
+					</span>     
+                        <div class="wrap-input100 validate-input">
+                        	 <h3 id="heading"> General Details:</h3>
+                          <label for="name">Name:</label>
+                           <input id="name" type="text" name="user_name" placeholder="username/name">
+      
+                           <label for="mail">Email:</label>
+                           <input type="email" id="mail" name="user_email" placeholder="Email" required="please enter to move forward">
+                            <br> 
+                           <label for="college">College:</label>
+                          <input type="college" id="college" name="user_college" placeholder="College">     
+                           <label for="phonenum"> Phone.no :</label>
+                           <input id="phonenum"type="text" name="phonenum" placeholder="Phone No:" pattern=".{10}" required>
+                     	
+                     </div>
+
+                        <div class="wrap-input100 validate-input" >
+                     	  <h3 id="heading"> Branch :</h3>
+                     	  <label for="branch"></label>
+                       <input type="radio" id="branch" required value="ECE" name="user_branch"><label for="ece" class="light">&nbsp; Electronics And Communication</label><br>
+                        <input type="radio" id="branch/IT" required value="CSE" name="user_branch"><label for="cse/it" class="light">&nbsp;CS/IT</label><br>
+                        <input type="radio" id="branch" required value="EEE" name="user_branch"><label for="eee" class="light">&nbsp; Electrical and Electronics </label><br>
+                        <input type="radio" id="branch" required value="MECH" name="user_branch"><label for="mech" class="light">&nbsp;Mechanical</label><br>
+                        <input type="radio" id="branch" required value="OTHER" name="user_branch"><label for="other" class="light"> &nbsp;Other</label><br>
+                     </div>
+                
+                 <div class="wrap-input100 validate-input" >
+                 	 <h3 id="heading"> Year :</h3>
+                 	 <label for="Year"></label>
+       <input type="radio" id="Year" value="1year" name="user_year"><label for="firstyear" class="light" required>&nbsp;First Year</label><br>
+      <input type="radio" id="Year" value="2year" name="user_year"><label for="secondyear" class="light" required>&nbsp;Second Year</label><br>
+      <input type="radio" id="Year" value="3year" name="user_year"><label for="thirdyear" class="light" required>&nbsp;Third  Year</label><br>
+      <input type="radio" id="Year" value="4year" name="user_year"><label for="fourthyear" class="light" required>&nbsp;Fourth Year</label><br>
+                	
+                </div>
+					
+                 <div class="wrap-input100 validate-input" >
+                  <h3 id="heading"> Your Intrests :</h3>
+    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">&nbsp;Software Development</label><br>
+    <input type="checkbox" id="developmenth" value="interest_developmenth" name="user_interesth"><label class="light" for="hdevelopment">&nbsp;Hardware Development</label><br>
+    <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">&nbsp;Design</label><br>
+    <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">&nbsp;Business</label>
+    <h5 id="onetime"> Your Project is Related to :</h5>
+    <select id="project" name="user_project">
+     <optgroup label="Select a field">
+     	 <optgroup label="Software Development">
+      	<option value="none">--Choose--</option>
+        <option value="frontend_developer">Front-End Developer</option>
+        <option value="java_developor">Java Developer</option>
+        <option value="python_developer">Python Developer</option>
+        <option value="backend_developer"> Backend Developer</option>
+        <option value="web_developer">Full Stack Web Development</option>
+        <option value="app_developer">App Development</option>
+      </optgroup>
+      <optgroup label="Hardware Development">
+        <option value="iot_devlopment">Internet Of Things </option>
+        <option value="hardware">Hardware</option>
+   
+      </optgroup>
+      <optgroup label="Graphic Designing">
+        <option value="designng">Graphic Designing</option>
+        <option value="freelancer">Freelancer</option>
+      </optgroup>
+      <optgroup label="Other">
+        <option> C++ programming</option>
+      </optgroup>
+     </optgroup>
+    </select>  
+                       </div>
+                       
+             
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+</body>
+</html>
